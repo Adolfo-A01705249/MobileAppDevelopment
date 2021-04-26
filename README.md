@@ -13,3 +13,4 @@ This is a repository for exercises done during the february-june 2021 *Mobile Ap
 - [Exercise 4 - Consuming harware APIs and event interfaces] (https://github.com/Adolfo-A01705249/MobileAppDevelopment/tree/master/SensorsHW)
 - [Exercise 5 - Consuming REST APIs and incorporating materialize] (https://github.com/Adolfo-A01705249/MobileAppDevelopment/tree/master/UseWanikaniAPI)
 
+
