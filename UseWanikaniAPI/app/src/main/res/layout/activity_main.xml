@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/radical_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:text="部首"
+        android:textColor="#33BBFF"
+        android:textSize="36sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/radical_txt"
+        app:layout_constraintStart_toStartOf="@+id/title_txt" />
+
+    <TextView
+        android:id="@+id/vocabulary_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:text="0"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="@+id/kanji_txt"
+        app:layout_constraintTop_toBottomOf="@+id/kanji_txt" />
+
+    <TextView
+        android:id="@+id/kanji_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="漢字"
+        android:textColor="#FF33BB"
+        android:textSize="36sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/kanji_txt"
+        app:layout_constraintStart_toStartOf="@+id/radical_label" />
+
+    <TextView
+        android:id="@+id/kanji_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:text="0"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="@+id/radical_txt"
+        app:layout_constraintTop_toBottomOf="@+id/radical_txt" />
+
+    <TextView
+        android:id="@+id/radical_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="39dp"
+        android:text="0"
+        android:textSize="36sp"
+        app:layout_constraintStart_toEndOf="@+id/radical_label"
+        app:layout_constraintTop_toBottomOf="@+id/title_txt"
+        style="@style/Widget.MaterialComponents.TextView" />
+
+    <TextView
+        android:id="@+id/errors_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="40dp"
+        android:textColor="#FF5722"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/complete_txt"
+        app:layout_constraintTop_toBottomOf="@+id/complete_txt" />
+
+    <TextView
+        android:id="@+id/complete_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="complete!"
+        android:textColor="#4CAF50"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculate_btn" />
+
+    <TextView
+        android:id="@+id/title_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:text="Items learned"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/calculate_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="43dp"
+        android:text="Get statistics"
+        style="?attr/materialButtonOutlinedStyle"
+        app:layout_constraintStart_toStartOf="@+id/vocabulary_label"
+        app:layout_constraintTop_toBottomOf="@+id/vocabulary_label" />
+
+    <TextView
+        android:id="@+id/vocabulary_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="単語"
+        android:textColor="#AA00FF"
+        android:textSize="36sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/vocabulary_txt"
+        app:layout_constraintStart_toStartOf="@+id/kanji_label" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
